@@ -1,1 +1,65 @@
+Seção Introdutória:
 
+1.  git commit; git commit
+
+2.  git checkout -b bugFix
+
+3.  git branch bugFix; git checkout bugFix; git commit; git checkout main
+    git commit; git merge bugFix
+
+4.  git checkout -b bugFix; git commit; git checkout main; git commit; git
+    checkout bugFix; git rebase main
+
+Acelerando:
+
+1.  git checkout C4
+
+2.  git checkout bugFix^
+
+3.  git branch -f main C6; git branch -f bugFix HEAD~2; git checkout C1
+
+4.  git reset HEAD~1; git checkout pushed; git revert HEAD
+
+Movendo trabalho por ai:
+
+1.  git cherry-pick C3 C4 C7
+
+2.  git rebase -i HEAD~4
+
+Sortidos:
+
+1.  git rebase -i HEAD~3; git rebase bugFix main
+
+2.  git rebase -i HEAD~2; git commit –amend; git rebase -i HEAD~2; git
+    branch -f main c3’’
+
+3.  git checkout main; git cherry-pick c2; git branch -f main c1; git
+    cherry-pick c2’ c3
+
+4.  git tag v0 c1; git tag v1 c2; git checkout c2
+
+5.  git describe main; git describe side; git describe bugFix
+
+Avançado:
+
+1.  git rebase main bugFix; git rebase bugFix side; git rebase side
+    another; git rebase another main
+
+2.  git branch bugWork main_(^2)
+
+3.  git checkout one; git cherry-pick c4 c3 c2; git checkout two; git
+    cherry-pick c5 c4 c3 c2; git branch -f three c2
+
+Seção Remota:
+
+Push & Pull:
+
+1.  git clone
+
+2.  git commit; git checkout o/main; git commit
+
+3.  git fetch
+
+4.  git pull
+
+5.  git clone; git commit; git fakeTeamwork main 2; git pull
