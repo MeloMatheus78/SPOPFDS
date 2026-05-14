@@ -1,0 +1,24 @@
+{
+  "editor.tabSize": 2,                   
+  "editor.formatOnSave": true,            
+  "files.autoSave": "onFocusChange",      
+  "editor.minimap.enabled": false,      
+  "editor.wordWrap": "on",                
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true       
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",     
+    "vue-html": "html"
+  },
+  "css.validate": true,
+  "scss.validate": true,
+  "javascript.validate.enable": true,
+  "typescript.validate.enable": true,
+  "liveServer.settings.port": 5500,     
+  "prettier.singleQuote": true,
+  "prettier.semi": true,
+  "path-intellisense.mappings": {
+    "@": "${workspaceFolder}/src"        
+  }
+}
